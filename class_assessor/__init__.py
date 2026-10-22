@@ -1,0 +1,1 @@
+"""Class Quality Assessor Package."""

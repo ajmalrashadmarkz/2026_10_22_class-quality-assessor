@@ -1,0 +1,9 @@
+{
+  "thresholds": {
+    "Poor": 0.0,
+    "Average": 2.65,
+    "Good": 3.15,
+    "Excellent": 3.45
+  },
+  "confidence_margin": 0.10
+}

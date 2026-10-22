@@ -1,0 +1,44 @@
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Secrets and Local Configurations
+.env
+.env.local
+*.key
+key.txt
+
+# Media & Heavy Binary Assets (Child Privacy & Size Bounds)
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.wav
+*.mp3
+*.flac
+*.jpg
+*.jpeg
+*.png
+*.zip
+*.tar.gz
+samples/
+labels.csv
+
+# Aider chat tags and local logs
+.aider.input.history
+.aider.tags.cache.v3/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+.aider*
+
+server_or_github_code/
