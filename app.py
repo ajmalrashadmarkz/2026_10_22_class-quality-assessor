@@ -322,7 +322,12 @@ with gr.Blocks(title="Class Quality Assessor — Humaniti AI") as demo:
 
 
 if __name__ == "__main__":
+    import os
+
+    port = int(os.environ.get("PORT", 7860))
     demo.queue(max_size=2).launch(
+        server_name="0.0.0.0",
+        server_port=port,
         theme=gr.themes.Soft(),
         css=CUSTOM_CSS,
         footer_links=[],
