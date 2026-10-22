@@ -18,7 +18,7 @@ An automated, multimodal diagnostic system built for the **Humaniti AI 24-Hour B
 
 ## Submission Links
 
-- **Hosted Application:** [Hugging Face Space](https://huggingface.co/spaces/Rashad3436/humaniti-8x8-class-assessor) *(or run locally via instructions below)*
+- **Hosted Application:** [Live Production App](https://two026-10-22-class-quality-assessor.onrender.com)
 - **GitHub Repository:** [Class Quality Assessor Repository](https://github.com/ajmalrashadmarkz/class-quality-assessor)
 - **AI Interaction History:** Exported logs available in `logs/` (redacted of personal tokens and credentials)
 
