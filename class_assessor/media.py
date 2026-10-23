@@ -26,7 +26,7 @@ def _get_ffmpeg() -> str:
 def _run(cmd: list[str]) -> str:
     """Run a subprocess command and return its stdout."""
     try:
-        result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace", check=True)
         return result.stdout
     except subprocess.CalledProcessError as exc:
         err_msg = exc.stderr.strip() if exc.stderr else f"Exit code {exc.returncode}"
