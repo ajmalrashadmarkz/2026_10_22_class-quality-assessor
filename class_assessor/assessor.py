@@ -62,6 +62,10 @@ SYSTEM = (
     "- Uneven Consideration: If the tutor interacts primarily with 1 student while another student sits idle without equal turns, ENGAGEMENT MUST BE CAPPED AT 2 or 3.\n"
     "- Abrupt Conclusion: If the class ends abruptly without a recap summary and warm signoff, PACING MUST BE SCORED 1 or 2.\n"
     "- Homework: Explicitly check for homework. If given with clear instructions award 4-5 in content; if no homework is assigned, cap content at 3.\n\n"
+    "LANGUAGE & CODE-MIXING (MANGLISH / INDIC ENGLISH):\n"
+    "- Classes frequently use English or code-mixed English and Malayalam (Manglish) or Indian English.\n"
+    "- Do NOT penalize tutors or students for natural bilingual code-switching (e.g. 'manasilayo', 'clear aano', 'doubt undo', 'nannayi cheythu').\n"
+    "- Evaluate pedagogical intent, rapport, and instructional clarity equally across English and Manglish expressions.\n\n"
     "Provide specific timestamped evidence quotes for every dimension. Do NOT give polite inflation: score strictly according to the evidence."
 )
 

@@ -11,6 +11,13 @@ import librosa
 import numpy as np
 from faster_whisper import WhisperModel
 
+MANGLISH_INITIAL_PROMPT = (
+    "This is an online children's tutoring class conducted in English and Malayalam (Manglish). "
+    "The teacher and students frequently code-switch between English and Malayalam. "
+    "Common terms: namaskaram, sheri, manasilayo, doubt undo, clear aano, "
+    "next question nokkam, homework cheyyanam, very good, correct, shabash."
+)
+
 from class_assessor import config
 from class_assessor.schemas import AudioMetrics, Segment
 
@@ -27,7 +34,7 @@ def transcribe(
     model = WhisperModel(config.WHISPER_MODEL, device="cpu", compute_type="int8")
 
     print(f"[Whisper] Starting transcription ({total_sec:.1f}s total)...")
-    segments_iter, _info = model.transcribe(audio, vad_filter=True)
+    segments_iter, _info = model.transcribe(audio, vad_filter=True, initial_prompt=MANGLISH_INITIAL_PROMPT)
 
     segments: list[Segment] = []
     for s in segments_iter:
